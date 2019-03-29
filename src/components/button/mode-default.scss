@@ -1,0 +1,42 @@
+@mixin mode-default {
+  
+  button.mode-default {
+    transition: all 0.2s;
+  }
+
+  button.mode-default:hover {
+    transform: scale(1.05);
+  }
+  
+  button.mode-default:active {
+    transform: scale(0.95);
+  }
+
+  button.mode-default.default {
+    @include customize() {
+      background-color: getValue(button-default-background-color);
+      color: getValue(button-default-text-color);
+    }
+  }
+  
+  button.mode-default.primary {
+    @include customize() {
+      background-color: getValue(button-primary-background-color);
+      color: getValue(button-primary-text-color);
+    }
+  }
+  
+  button.mode-default.secondary {
+    @include customize() {
+      background-color: getValue(button-secondary-background-color);
+      color: getValue(button-secondary-text-color);
+    }
+  }
+  
+  button.mode-default.warning {
+    @include customize() {
+      background-color: getValue(button-warning-background-color);
+      color: getValue(button-warning-text-color);
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@mixin mode-raised {
+  
+    button.raised.default {
+      @include customize() {
+        background-color: getValue(button-default-background-color);
+        color: getValue(button-default-text-color);
+        box-shadow: 1px 1px 1px 1px getValue(button-default-shadow-color), 2px 2px 1px 1px getValue(button-default-shadow-color);
+      }
+    }
+  
+    button.raised.primary {
+      @include customize() {
+        background-color: getValue(button-primary-background-color);
+        color: getValue(button-primary-text-color);
+        box-shadow: 1px 1px 1px 1px getValue(button-primary-shadow-color), 2px 2px 1px 1px getValue(button-primary-shadow-color);
+      }
+    }
+  
+    button.raised.secondary {
+      @include customize() {
+        background-color: getValue(button-secondary-background-color);
+        color: getValue(button-secondary-text-color);
+        box-shadow: 1px 1px 1px 1px getValue(button-secondary-shadow-color), 2px 2px 1px 1px getValue(button-secondary-shadow-color);
+      }
+    }
+  
+    button.raised.warning {
+      @include customize() {
+        background-color: getValue(button-warning-background-color);
+        color: getValue(button-warning-text-color);
+        box-shadow: 1px 1px 1px 1px getValue(button-warning-shadow-color), 2px 2px 1px 1px getValue(button-warning-shadow-color);
+      }
+    }
+
+  }

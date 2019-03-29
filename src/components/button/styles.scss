@@ -1,0 +1,16 @@
+@import '../../theme/styles.scss';
+@import './mode-default.scss';
+@import './mode-outlined.scss';
+@import './mode-raised.scss';
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@include mode-default();
+@include mode-outlined();
+@include mode-raised();

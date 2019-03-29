@@ -1,0 +1,50 @@
+@mixin mode-outlined {
+
+  button.outlined {
+    transition: all 0.2s;
+  }
+
+  button.outlined:hover {
+    transform: scale(1.05);
+  }
+  
+  button.outlined:active {
+    transform: scale(0.95);
+  }
+
+  button.outlined {
+    border: 1px solid;
+  }
+
+  button.outlined.default {
+    @include customize() {
+      background-color: transparent;
+      border-color: getValue(button-default-background-color);
+      color: getValue(button-default-background-color);
+    }
+  }
+
+  button.outlined.primary {
+    @include customize() {
+      background-color: transparent;
+      border-color: getValue(button-primary-background-color);
+      color: getValue(button-primary-background-color);
+    }
+  }
+
+  button.outlined.secondary {
+    @include customize() {
+      background-color: transparent;
+      border-color: getValue(button-secondary-background-color);
+      color: getValue(button-secondary-background-color);
+    }
+  }
+
+  button.outlined.warning {
+    @include customize() {
+      background-color: transparent;
+      border-color: getValue(button-warning-background-color);
+      color: getValue(button-warning-background-color);
+    }
+  }
+}

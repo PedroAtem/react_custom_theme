@@ -1,0 +1,17 @@
+@function light() {
+  @return (
+    background: #f7f7f8,
+    textColor: #555555,
+
+    // buttons
+    button-default-background-color: #555555,
+    button-default-text-color: #f7f7f8,
+    button-primary-background-color: #3a6913,
+    button-primary-text-color: #f7f7f8,
+    button-secondary-background-color: #177ea7,
+    button-secondary-text-color: #f7f7f8,
+    button-warning-background-color: #e40a0a,
+    button-warning-text-color: #f7f7f8,
+
+  )
+}

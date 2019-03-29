@@ -1,0 +1,30 @@
+@import './theme/styles.scss';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+
+  @include customize() {
+    background-color: getValue(background);
+    color: getValue(textColor);
+  }
+}
+
+.app-content {
+  margin: 10px;
+}
+
+.theme-wrapper {
+  display: flex;
+  flex: 1;
+}
+
+Button {
+  margin: 5px;
+}

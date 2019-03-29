@@ -1,0 +1,21 @@
+@function dark() {
+  @return (
+    background: #131b1f,
+    textColor: #e0e0e0,
+
+    // buttons
+    button-default-background-color: #f7f7f8,
+    button-default-shadow-color: #b4b4b4,
+    button-default-text-color: #555555,
+    button-primary-background-color: #d38117,
+    button-primary-shadow-color: #83500e,
+    button-primary-text-color: #f7f7f8,
+    button-secondary-background-color: #6369b1,
+    button-secondary-shadow-color: #404472,
+    button-secondary-text-color: #f7f7f8,
+    button-warning-background-color: #c54141,
+    button-warning-shadow-color: #832929,
+    button-warning-text-color: #f7f7f8,
+    
+  )
+}
